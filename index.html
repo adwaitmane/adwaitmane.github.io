@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Carbon Easy!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="favicon.png?">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- The Modal -->
+        <div id="form-ct" class="modal-container">
+            <form class="modal-content">
+                <!-- Modal Header Section -->
+                <div class="modal-header custom-background-colour">
+                    <span class="close-button">&times;</span>
+                    <h2>REGISTER</h2>
+                </div>
+
+                <!-- Form Inputs-->
+                <div class="modal-body">
+                    <div id="userInfo" class="form-section" style="margin-top: 10px;">
+                        <label for="given-name"><b>Given Name</b></label>
+                        <input type="text" placeholder="Enter Given Name" name="given-name" required />
+
+                        <label for="surname"><b>Surname</b></label>
+                        <input type="text" placeholder="Enter Surname" name="surname" required />
+
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required />
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required />
+                    </div>
+
+                    <div id="addressInfo" class="form-section">
+                        <label for="home-address"><b>Home Address</b></label>
+                        <input type="text" placeholder="Enter Home Address" name="home-address" required />
+
+                        <label for="work-address"><b>Work Address</b></label>
+                        <input type="text" placeholder="Enter Work Address" name="work-address" />
+                    </div>
+
+                    <div id="contactInfo" class="form-section">
+                        <label for="mobile-number"><b>Mobile Number</b></label>
+                        <input type="text" placeholder="Enter Mobile Number" name="mobile-number" required />
+
+                        <label for="email-address"><b>Email Address</b></label>
+                        <input type="text" placeholder="Enter Email Address" name="email-address" required />
+                    </div>
+                    <div style="display:flex; justify-content: center;">
+                        <button id="submit-button" class="submit-button custom-background-colour">SUBMIT</button>
+                    </div>
+                    
+                </div>
+
+    
+            </form>
+        </div>
+
+        <!-- Header Navigation Bar -->
+        <div class="nav-wrapper">
+            <!-- Logo -->
+            <div class="left-side">
+                <img src="light-bulb.png" alt="light bulb logo" width="50">
+                <h2>Carbon <span class="custom-colour">Easy!</span></h2>
+
+                <div class="nav-links">
+
+                    <div class="nav-link-wrapper">
+                        <a class="link-animation" href="#">Our Mission</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a class="link-animation" href="#">What we do</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a class="link-animation" href="#">Calculator</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a class="link-animation" href="#">News</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--MIddle-->
+
+
+            <!-- Page Links -->
+            <div class="right-side">
+                <div class="search-box">
+                    <i class="fa fa-search" style="font-size: 22px;"></i>
+                    <input type="text" placeholder="Search here..." />
+                    <button class="search-button custom-background-colour">Search</button>
+                </div>
+                <a href="#" class="fa fa-user custom-colour" style="font-size: 30px;"></a>
+            </div>
+        </div>
+
+        <!--Page Content-->
+        <div class="page-content">
+            <div class="info-container" title="lavender-field">
+                <img src="lavender6.jpg" alt="Lavender field background"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index:-1;">
+
+                <div class="heading-text">
+                    Measure your impact. Reduce your footprint.
+                </div>
+                <div class="info-text-1">
+                    <p>
+                        Measure your carbon footprint, discover areas for improvement, and make positive changes to
+                        reduce your impact on the planet.
+                    </p>
+                </div>
+                <div class="info-text-2">
+                    <p>Join us in creating a sustainable tomorrow.</p>
+                </div>
+                <button class="join-button custom-colour" id="trigger-modal">
+                    Join Now
+                </button>
+            </div>
+
+            <!--Lower Section-->
+            <div class="contribution-container">
+                <div class="contribution-info-text">
+                    <h1>Discover how our carbon footprint calculator has empowered over <span
+                            class="custom-colour">24,291</span> individuals and businesses to reduce carbon emissions
+                    </h1>
+                    <p>
+                        Your carbon emissions are affected by a wide range of factors. Many of which are out of your
+                        control. We make it simpler.
+                    </p>
+                    <div class="contribution-links">
+                        <a class="custom-colour link-animation" href="#">Find out more</a> <br>
+                        <a class="custom-colour link-animation" href="#">How we calculate your footprint</a>
+                    </div>
+
+                </div>
+                <div class="card-container">
+                    <div class="card-background">
+                        <img src="calculator.png" alt="calculator icon">
+                        <p>Our <strong>accurate</strong> calculator provides results based on information you actually know</p>
+                    </div>
+                    <div class="card-background">
+                        <img src="solution.png" alt="solution icon">
+                        <p>We offer <strong>personalised</strong> solutions to help reduce your carbon emissions</p>
+                    </div>
+                    <div class="card-background">
+                        <img src="clipboard.png" alt="clipboard icon">
+                        <p>Provide <strong>achievable</strong> goals that are maintainable in the long term</p>
+                    </div>
+                    <div class="card-background">
+                        <img src="bar-chart.png" alt="graph icon">
+                        <p>Ability to <strong>compare</strong> your results to others in a similar demograpghic</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer custom-background-colour">
+            <div class="left-side" style="margin-left:20px;">
+                <p> &copy Copyright Carbon Easy!</p>
+            </div>
+
+            <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
